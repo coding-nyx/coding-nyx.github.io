@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ash — privacy policy</title>
+<style>
+  body { font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 4rem auto; padding: 0 1.25rem; color: #1f2937; }
+  h1, h2, h3 { font-weight: 600; letter-spacing: -0.01em; }
+  h2 { margin-top: 2rem; font-size: 1.1rem; }
+  h3 { margin-top: 1.25rem; font-size: 1rem; }
+  p, li { color: #374151; }
+  ul { padding-left: 1.4rem; }
+  a { color: #2563eb; }
+  small.muted { color: #6b7280; }
+</style>
+</head>
+<body>
+<h1>Privacy policy</h1>
+<p>This page describes how the personal AI assistant "Ash" handles data it accesses through Google APIs on behalf of its single authorized user. The full text below is the authoritative policy.</p>
+
+<h2>1. Who is the operator</h2>
+<p>Ash is operated by a single individual (<code>raju9112000@gmail.com</code>) on their own personal computing hardware. There is no organization, no company, no third-party vendor, and no remote backend. Ash runs locally on hardware controlled by the user.</p>
+
+<h2>2. What data Ash accesses</h2>
+<p>Ash can request the following Google account scopes, but only accesses the data within them <strong>when the user issues an explicit command</strong>:</p>
+<ul>
+  <li><strong>Gmail read, send, and modify</strong> &mdash; mail content, mail metadata, label state. Used to search, triage, draft, and (on explicit user request) send or trash.</li>
+  <li><strong>Google Calendar</strong> &mdash; event metadata (title, time, attendees). Used to surface upcoming agenda items.</li>
+  <li><strong>Google Drive, Google Docs, Google Sheets</strong> &mdash; file metadata and content of files the user names. Used to read, edit, or create documents on explicit user request.</li>
+  <li><strong>Google Contacts (read-only)</strong> &mdash; contact records. Used to enrich the mail composer with the right recipient name.</li>
+</ul>
+
+<h2>3. Where data lives</h2>
+<p>All access tokens, all temporary caches, and all logged outputs stay on the operator's local hardware. Nothing is uploaded to a remote service.</p>
+
+<h2>4. What Ash does <em>not</em> do with your data</h2>
+<ul>
+  <li>Does <strong>not</strong> train any model (including the assistant itself) on your data.</li>
+  <li>Does <strong>not</strong> sell, rent, or share your data with any third party.</li>
+  <li>Does <strong>not</strong> run any analytics, telemetry, or background sync.</li>
+  <li>Does <strong>not</strong> use your data to build profiles or advertisements.</li>
+</ul>
+
+<h2>5. Data retention</h2>
+<p>The OAuth refresh token is stored on local hardware encrypted at rest by the host operating system. The user can revoke the token at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. After revocation, all cached data is purged on next agent startup.</p>
+
+<h2>6. Children</h2>
+<p>Ash is not directed at children and the operator does not knowingly collect data from anyone under 18.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>Any change to data access or sharing behavior will be reflected on this page before it takes effect. The "last updated" date at the bottom of the page shows the current version.</p>
+
+<h2>8. Contact</h2>
+<p>For any question about this policy or to request a copy of all data Ash has accessed, contact <a href="mailto:raju9112000@gmail.com">raju9112000@gmail.com</a>.</p>
+
+<p><a href="./index.html">&larr; Back to home</a> &nbsp; | &nbsp; <a href="./terms.html">Terms of service</a></p>
+
+<p><small class="muted">Last updated 2026-07-14.</small></p>
+</body>
+</html>
