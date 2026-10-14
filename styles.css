@@ -703,3 +703,21 @@ footer > p {
     transition: none;
   }
 }
+
+/* Keep descriptive sentences naturally spaced at every width. */
+.section-heading > p {
+  max-width: 350px;
+}
+@media (max-width: 960px) {
+  .section-heading > p {
+    max-width: 280px;
+  }
+}
+@media (max-width: 620px) {
+  .section-heading > p {
+    max-width: none;
+  }
+  .search input {
+    font-size: 16px;
+  }
+}
