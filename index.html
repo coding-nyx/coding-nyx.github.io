@@ -1,49 +1,307 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ash — personal AI assistant</title>
-<style>
-  body { font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 4rem auto; padding: 0 1.25rem; color: #1f2937; }
-  h1 { font-weight: 600; letter-spacing: -0.01em; }
-  h2 { margin-top: 2.25rem; font-weight: 600; font-size: 1.05rem; }
-  p, li { color: #374151; }
-  ul { padding-left: 1.4rem; }
-  a { color: #2563eb; }
-  small.muted { color: #6b7280; }
-</style>
-</head>
-<body>
-<h1>Ash</h1>
-<p>Ash is a personal AI assistant that operates locally on hardware owned and operated by its developer (<code>raju9112000@gmail.com</code>). Ash connects to a small set of Google Workspace services only when explicitly asked, and only uses data from the single authorized account to fulfil that request.</p>
-
-<h2>What Ash does</h2>
-<ul>
-  <li>Reads inbox messages and labels on explicit user request.</li>
-  <li>Sends mail or replies to threads only when the user asks it to.</li>
-  <li>Surfaces upcoming calendar events.</li>
-  <li>Reads and writes Google Drive, Docs, and Sheets files the user names.</li>
-  <li>Reads contacts the user has explicitly asked about.</li>
-</ul>
-
-<h2>What Ash does <em>not</em> do</h2>
-<ul>
-  <li>Does not train any model on your data.</li>
-  <li>Does not share data with third parties.</li>
-  <li>Does not run any background telemetry or analytics.</li>
-  <li>Does not store tokens or data on a remote server; everything stays on the user's own hardware.</li>
-</ul>
-
-<h2>Operator</h2>
-<p>This is a single-operator, single-user tool. The codebase is private. Feedback: <a href="mailto:raju9112000@gmail.com">raju9112000@gmail.com</a>.</p>
-
-<h2>Legal</h2>
-<ul>
-  <li><a href="./privacy.html">Privacy policy</a></li>
-  <li><a href="./terms.html">Terms of service</a></li>
-</ul>
-
-<p><small class="muted">Last updated 2026-07-14.</small></p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NYX — Public projects</title>
+    <meta
+      name="description"
+      content="A directory of coding-nyx public projects: personal apps, developer tools and board software. Source, documentation, forks and archived work."
+    />
+    <meta name="theme-color" content="#f5f3ed" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#projects">Skip to projects</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="./" aria-label="NYX home"
+          ><span class="brand-mark" aria-hidden="true">n.</span><span>coding-nyx</span></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#projects">Projects</a><a href="#forks">Forks</a
+          ><a href="https://github.com/coding-nyx" class="github-link"
+            >GitHub <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </header>
+      <main>
+        <section class="hero" aria-labelledby="intro">
+          <p class="eyebrow"><span></span>Public source, with context</p>
+          <h1 id="intro">Things I’m building.<br /><span>And the work behind them.</span></h1>
+          <p class="hero-copy">
+            Personal apps, developer tools and board software. A small directory to find the source,
+            understand the scope and get started.
+          </p>
+          <div class="hero-links">
+            <a class="primary-link" href="#projects"
+              >Explore the projects <span aria-hidden="true">↓</span></a
+            ><a href="https://iamnyx.web.app"
+              >About me &amp; portfolio <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-stats" aria-label="Directory summary">
+            <span><strong>8</strong> original projects</span
+            ><span><strong>2</strong> upstream forks</span
+            ><span><strong>4</strong> archived repositories</span>
+          </div>
+        </section>
+        <section id="projects" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">The current collection</p>
+              <h2 id="projects-title">Find your starting point.</h2>
+            </div>
+            <p>
+              Read the scope and setup in each repository.<br />Public source does not mean a public
+              running service.
+            </p>
+          </div>
+          <div class="project-toolbar">
+            <div class="filters" role="group" aria-label="Project category">
+              <button type="button" data-filter="all" aria-pressed="true">All</button
+              ><button type="button" data-filter="apps" aria-pressed="false">Apps</button
+              ><button type="button" data-filter="tools" aria-pressed="false">Tools</button
+              ><button type="button" data-filter="systems" aria-pressed="false">Systems</button>
+            </div>
+            <label class="search"
+              ><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.5" />
+                <path d="m16 16 4 4" /></svg
+              ><input
+                id="project-search"
+                type="search"
+                aria-label="Find a project"
+                placeholder="Find a project"
+                autocomplete="off"
+            /></label>
+          </div>
+          <p id="result-count" class="result-count" aria-live="polite">8 projects</p>
+          <div class="project-grid">
+            <article class="project-card" data-kind="apps">
+              <div class="card-top">
+                <span class="project-mark" aria-hidden="true">T</span><span class="kind">apps</span>
+              </div>
+              <h3><a href="https://github.com/coding-nyx/tally">Tally</a></h3>
+              <p>
+                A single-person finance dashboard with PostgreSQL storage and a shared MCP service.
+              </p>
+              <div class="tags"><span>Finance</span><span>PostgreSQL</span><span>MCP</span></div>
+              <div class="card-bottom">
+                <a href="https://github.com/coding-nyx/tally"
+                  >Source &amp; docs <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-kind="apps">
+              <div class="card-top">
+                <span class="project-mark" aria-hidden="true">H</span><span class="kind">apps</span>
+              </div>
+              <h3>
+                <a href="https://github.com/coding-nyx/hermes-companion-app">Hermes Companion</a>
+              </h3>
+              <p>
+                A native Android interface for a self-hosted agent: threads, chat, rooms and paired
+                device tools.
+              </p>
+              <div class="tags">
+                <span>Android</span><span>Kotlin</span><span>Self-hosted</span>
+              </div>
+              <div class="card-bottom">
+                <a href="https://github.com/coding-nyx/hermes-companion-app"
+                  >Source &amp; docs <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-kind="tools">
+              <div class="card-top">
+                <span class="project-mark" aria-hidden="true">F</span
+                ><span class="kind">tools</span>
+              </div>
+              <h3><a href="https://github.com/coding-nyx/forge-cli">Forge CLI</a></h3>
+              <p>
+                Streaming terminal chat across model providers, with file context and confirmed
+                shell actions.
+              </p>
+              <div class="tags"><span>Rust</span><span>CLI</span><span>Development</span></div>
+              <div class="card-bottom">
+                <a href="https://github.com/coding-nyx/forge-cli"
+                  >Source &amp; docs <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-kind="apps">
+              <div class="card-top">
+                <span class="project-mark" aria-hidden="true">N</span><span class="kind">apps</span>
+              </div>
+              <h3><a href="https://github.com/coding-nyx/portfolio">Portfolio</a></h3>
+              <p>
+                Projects, case studies, experience and résumé downloads in a responsive personal
+                portfolio.
+              </p>
+              <div class="tags"><span>React</span><span>Vite</span><span>Portfolio</span></div>
+              <div class="card-bottom">
+                <a href="https://github.com/coding-nyx/portfolio"
+                  >Source &amp; docs <span aria-hidden="true">↗</span></a
+                ><a href="https://iamnyx.web.app" class="live"
+                  >Live portfolio <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-kind="apps">
+              <div class="card-top">
+                <span class="project-mark" aria-hidden="true">W</span><span class="kind">apps</span>
+              </div>
+              <h3>
+                <a href="https://github.com/coding-nyx/hermes-companion-web">Companion Web</a>
+              </h3>
+              <p>
+                A browser companion with mailbox pairing, chat and a device interface with demo and
+                browser limits.
+              </p>
+              <div class="tags"><span>React</span><span>PWA</span><span>Companion</span></div>
+              <div class="card-bottom">
+                <a href="https://github.com/coding-nyx/hermes-companion-web"
+                  >Source &amp; docs <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-kind="tools">
+              <div class="card-top">
+                <span class="project-mark" aria-hidden="true">P</span
+                ><span class="kind">tools</span>
+              </div>
+              <h3>
+                <a href="https://github.com/coding-nyx/hermes-companion-plugin">Companion Plugin</a>
+              </h3>
+              <p>
+                Discovery, pairing, a web mailbox and a native-node broker for compatible Hermes
+                clients.
+              </p>
+              <div class="tags"><span>Python</span><span>Plugin</span><span>Device RPC</span></div>
+              <div class="card-bottom">
+                <a href="https://github.com/coding-nyx/hermes-companion-plugin"
+                  >Source &amp; docs <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-kind="apps">
+              <div class="card-top">
+                <span class="project-mark" aria-hidden="true">♠</span><span class="kind">apps</span>
+              </div>
+              <h3><a href="https://github.com/coding-nyx/poker">Heads-up Poker</a></h3>
+              <p>
+                Play-money Texas Hold’em with shared game engines, an Expo client and a server-side
+                dealer.
+              </p>
+              <div class="tags"><span>Expo</span><span>Firebase</span><span>Play-money</span></div>
+              <div class="card-bottom">
+                <a href="https://github.com/coding-nyx/poker"
+                  >Source &amp; docs <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            <article class="project-card" data-kind="systems">
+              <div class="card-top">
+                <span class="project-mark" aria-hidden="true">A</span
+                ><span class="kind">systems</span>
+              </div>
+              <h3><a href="https://github.com/coding-nyx/a0090-meta">A0090 / RK3588</a></h3>
+              <p>
+                Board-specific Linux, Debian image inputs, device trees and recovery documentation.
+              </p>
+              <div class="tags"><span>Linux</span><span>ARM64</span><span>Board support</span></div>
+              <div class="card-bottom">
+                <a href="https://github.com/coding-nyx/a0090-meta"
+                  >Source &amp; docs <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="empty-state" id="empty-state" hidden>
+            <h3>No matching projects.</h3>
+            <p>Try a different keyword or category.</p>
+            <button type="button" id="reset-filters">Reset filters</button>
+          </div>
+          <noscript
+            ><p class="no-script">
+              All projects are listed above. Search and category filters require JavaScript.
+            </p></noscript
+          >
+        </section>
+        <section id="forks" aria-labelledby="forks-title" class="forks-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Learning from upstream</p>
+              <h2 id="forks-title">Forks, with credit.</h2>
+            </div>
+            <p>
+              These are forks of other projects.<br />The original authors and documentation remain
+              credited.
+            </p>
+          </div>
+          <div class="fork-grid">
+            <article class="fork-card">
+              <span class="small-label">Armbian tooling</span>
+              <h3>
+                <a href="https://github.com/coding-nyx/linaro-ipc-r-armbian"
+                  >linaro-ipc-r-armbian <span aria-hidden="true">↗</span></a
+                >
+              </h3>
+              <p>Armbian image and kernel tooling for supported ARM devices.</p>
+              <a class="upstream" href="https://github.com/ophub/amlogic-s9xxx-armbian"
+                >Upstream: ophub/amlogic-s9xxx-armbian</a
+              >
+            </article>
+            <article class="fork-card">
+              <span class="small-label">Agent platform</span>
+              <h3>
+                <a href="https://github.com/coding-nyx/openclaw-substrate"
+                  >openclaw-substrate <span aria-hidden="true">↗</span></a
+                >
+              </h3>
+              <p>A personal fork of the OpenClaw assistant platform.</p>
+              <a class="upstream" href="https://github.com/openclaw/openclaw"
+                >Upstream: openclaw/openclaw</a
+              >
+            </article>
+          </div>
+        </section>
+        <section class="archive-section" aria-label="Archived repositories">
+          <details>
+            <summary>
+              <span>Earlier work, kept for reference.</span
+              ><span class="archive-count">4 archived repos <span aria-hidden="true">+</span></span>
+            </summary>
+            <p>
+              These repositories are archived on GitHub. Their source remains public, but the
+              archive status is not a maintenance or support promise.
+            </p>
+            <div class="archive-links">
+              <a href="https://github.com/coding-nyx/archinstall"
+                >archinstall <span>Fork · archived</span></a
+              ><a href="https://github.com/coding-nyx/hermes-companion"
+                >hermes-companion <span>Earlier prototype · archived</span></a
+              ><a href="https://github.com/coding-nyx/personal-trainer"
+                >personal-trainer <span>Archived</span></a
+              ><a href="https://github.com/coding-nyx/worktracker"
+                >worktracker <span>Archived</span></a
+              >
+            </div>
+          </details>
+        </section>
+      </main>
+      <footer>
+        <a class="wordmark" href="./"
+          ><span class="brand-mark small" aria-hidden="true">n.</span><span>coding-nyx</span></a
+        >
+        <p>Source first. Status and setup in the READMEs.</p>
+        <a href="https://github.com/coding-nyx/coding-nyx.github.io"
+          >About this directory <span aria-hidden="true">↗</span></a
+        >
+      </footer>
+    </div>
+  </body>
 </html>

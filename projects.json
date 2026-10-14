@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Tally",
+    "repo": "tally",
+    "kind": "apps",
+    "desc": "A single-person finance dashboard with PostgreSQL storage and a shared MCP service.",
+    "tags": ["Finance", "PostgreSQL", "MCP"],
+    "mark": "T"
+  },
+  {
+    "name": "Hermes Companion",
+    "repo": "hermes-companion-app",
+    "kind": "apps",
+    "desc": "A native Android interface for a self-hosted agent: threads, chat, rooms and paired device tools.",
+    "tags": ["Android", "Kotlin", "Self-hosted"],
+    "mark": "H"
+  },
+  {
+    "name": "Forge CLI",
+    "repo": "forge-cli",
+    "kind": "tools",
+    "desc": "Streaming terminal chat across model providers, with file context and confirmed shell actions.",
+    "tags": ["Rust", "CLI", "Development"],
+    "mark": "F"
+  },
+  {
+    "name": "Portfolio",
+    "repo": "portfolio",
+    "kind": "apps",
+    "desc": "Projects, case studies, experience and résumé downloads in a responsive personal portfolio.",
+    "tags": ["React", "Vite", "Portfolio"],
+    "mark": "N",
+    "live": "https://iamnyx.web.app"
+  },
+  {
+    "name": "Companion Web",
+    "repo": "hermes-companion-web",
+    "kind": "apps",
+    "desc": "A browser companion with mailbox pairing, chat and a device interface with demo and browser limits.",
+    "tags": ["React", "PWA", "Companion"],
+    "mark": "W"
+  },
+  {
+    "name": "Companion Plugin",
+    "repo": "hermes-companion-plugin",
+    "kind": "tools",
+    "desc": "Discovery, pairing, a web mailbox and a native-node broker for compatible Hermes clients.",
+    "tags": ["Python", "Plugin", "Device RPC"],
+    "mark": "P"
+  },
+  {
+    "name": "Heads-up Poker",
+    "repo": "poker",
+    "kind": "apps",
+    "desc": "Play-money Texas Hold’em with shared game engines, an Expo client and a server-side dealer.",
+    "tags": ["Expo", "Firebase", "Play-money"],
+    "mark": "♠"
+  },
+  {
+    "name": "A0090 / RK3588",
+    "repo": "a0090-meta",
+    "kind": "systems",
+    "desc": "Board-specific Linux, Debian image inputs, device trees and recovery documentation.",
+    "tags": ["Linux", "ARM64", "Board support"],
+    "mark": "A"
+  }
+]
