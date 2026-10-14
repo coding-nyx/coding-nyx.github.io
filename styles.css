@@ -200,6 +200,7 @@ h2 {
   margin: 0;
 }
 .section-heading > p {
+  max-width: 350px;
   font-size: 13px;
   color: #777b77;
   line-height: 1.7;
@@ -510,9 +511,6 @@ footer > p {
   h1 {
     font-size: 51px;
   }
-  .section-heading br {
-    display: none;
-  }
 }
 @media (max-width: 620px) {
   .page-shell {
@@ -605,6 +603,9 @@ footer > p {
     width: 100%;
     padding: 10px 13px;
     min-height: 44px;
+  }
+  .search input {
+    font-size: 16px;
   }
   .project-grid,
   .fork-grid {
@@ -701,23 +702,5 @@ footer > p {
   }
   .project-card {
     transition: none;
-  }
-}
-
-/* Keep descriptive sentences naturally spaced at every width. */
-.section-heading > p {
-  max-width: 350px;
-}
-@media (max-width: 960px) {
-  .section-heading > p {
-    max-width: 280px;
-  }
-}
-@media (max-width: 620px) {
-  .section-heading > p {
-    max-width: none;
-  }
-  .search input {
-    font-size: 16px;
   }
 }

@@ -17,7 +17,7 @@ The public project directory at **https://coding-nyx.github.io/**. It brings tog
 | Forks             | Armbian and OpenClaw forks with upstream credits                                  |
 | Archived work     | Four public archived repositories, clearly labeled                                |
 
-This is a static directory, not a hosted runtime for the projects. Private services are linked to their public source only. The previous Ash application landing and legal pages have been retired.
+This is a static directory, not a hosted runtime for the projects. Private services are linked to their public source only.
 
 ## Run locally
 
