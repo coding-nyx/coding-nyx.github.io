@@ -10,12 +10,14 @@ The public project directory at **https://coding-nyx.github.io/**. It brings tog
 
 ## What it contains
 
-| Section           | Purpose                                                                           |
-| ----------------- | --------------------------------------------------------------------------------- |
-| Original projects | Eight project cards, including Tally, Forge CLI and the current Hermes companions |
-| Find/filter       | Text search and Apps / Tools / Systems filters                                    |
-| Forks             | Armbian and OpenClaw forks with upstream credits                                  |
-| Archived work     | Four public archived repositories, clearly labeled                                |
+| Section           | Purpose                                                                            |
+| ----------------- | ---------------------------------------------------------------------------------- |
+| Original projects | Nine project cards, including Agent OS, Tally, Forge CLI and the Hermes companions |
+| Find/filter       | Text search and Apps / Tools / Systems filters                                     |
+| Forks             | Armbian and OpenClaw forks with upstream credits                                   |
+| Archived work     | Four public archived repositories, clearly labeled                                 |
+
+Agent OS is in development as the successor to the deprecated Ara prototype. Its card links to the public source; no hosted Agent OS demo is advertised.
 
 This is a static directory, not a hosted runtime for the projects. Private services are linked to their public source only.
 

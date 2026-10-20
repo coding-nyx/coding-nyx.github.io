@@ -1,5 +1,13 @@
 [
   {
+    "name": "Agent OS",
+    "repo": "agent-os",
+    "kind": "apps",
+    "desc": "A local-first workspace for specialist agents and persistent personal data, built on Hermes. In development as the successor to the deprecated Ara prototype.",
+    "tags": ["In development", "Python", "PostgreSQL"],
+    "mark": "A"
+  },
+  {
     "name": "Tally",
     "repo": "tally",
     "kind": "apps",
